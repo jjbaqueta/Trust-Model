@@ -14,7 +14,7 @@ import fuzzyCognitiveMaps.model.FuzzyVisitor;
  * As output, the bfs shows all reached nodes from the inputs of given a Fuzzy Cognitive map.
  */
 public class BfsVisitor implements FuzzyVisitor 
-{
+{	
 	public void visit(FuzzyGraph fuzzyGraph) 
 	{
 		for (FuzzyNode input : fuzzyGraph.getInputs())

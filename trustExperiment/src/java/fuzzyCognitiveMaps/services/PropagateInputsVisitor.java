@@ -61,10 +61,7 @@ public class PropagateInputsVisitor implements FuzzyVisitor
 					}
 					
 					// Threshold functions
-//					double newValue = thresholdSinH(sum);
-//					double newValue = thresholdCosH(sum);
 					double newValue = thresholdTanH(sum);
-//					double newValue = thresholdTan(sum);
 //					double newValue = thresholdSin(sum);
 //					double newValue = thresholdCos(sum);
 //					double newValue = thresholdSigmoid(sum);
@@ -87,36 +84,6 @@ public class PropagateInputsVisitor implements FuzzyVisitor
 	private double thresholdTanH(double x) 
 	{
 		return Math.tanh(x);
-	}
-	
-	/**
-	 * Indicated when node's values are based on interval [-1, 1]
-	 * @return a value in the interval [-1,1] as result of hyperbolic sine operation
-	 */
-	@SuppressWarnings("unused")
-	private double thresholdSinH(double x) 
-	{
-		return Math.sinh(x);
-	}
-	
-	/**
-	 * Indicated when node's values are based on interval [-1, 1]
-	 * @return a value in the interval [-1,1] as result of hyperbolic sine operation
-	 */
-	@SuppressWarnings("unused")
-	private double thresholdCosH(double x) 
-	{
-		return Math.cosh(x);
-	}
-	
-	/**
-	 * Indicated when node's values are based on interval [-1, 1]
-	 * @return a value in the interval [-1,1] as result of hyperbolic tangent operation
-	 */
-	@SuppressWarnings("unused")
-	private double thresholdTan(double x) 
-	{
-		return Math.tan(x);
 	}
 	
 	/**
