@@ -3,7 +3,9 @@ MAS trustExperiment {
 	infrastructure: Centralised
 
 	agents:
-		agent1 sample_agent;
+		ag1 beliefBaseClass reputationAndImage.model.TimeBB;
+		ag2 beliefBaseClass reputationAndImage.model.TimeBB;
+		ag3 beliefBaseClass reputationAndImage.model.TimeBB;
 
 	aslSourcePath:
 		"src/asl";
