@@ -10,6 +10,7 @@ public enum Mnemonic
 	IMPRESSION("imp"),
 	REPUTATION("rep"),
 	IMAGE("img"),
+	KNOWHOW("ref"),
 	TRUST("trust");
 	
 	private String mnemonic;

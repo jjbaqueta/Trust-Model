@@ -1,5 +1,7 @@
 package fuzzyCognitiveMaps.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -79,7 +81,43 @@ public class FuzzyGraph
 		}
 		return nonInputs;
 	}
-
+	
+	/**
+	 * This method search nodes by name.
+	 * As different nodes may have the same name, this methods returns a list of nodes.
+	 * @param nodeName: name of node to be found.
+	 * @return a list of matching nodes, case there are not matching, this method returns an empty list.
+	 */
+	public List<FuzzyNode> getNodesByName(String nodeName)
+	{
+		List<FuzzyNode> nodes = new ArrayList<FuzzyNode>();
+		
+		for(FuzzyNode node : this.nodesMap.getValues())
+		{
+			if(node.getName().equals(nodeName))
+				nodes.add(node);
+		}
+		return nodes;
+	}
+	
+	/**
+	 * This method search edges by name.
+	 * As different edges may have the same name, this methods returns a list of edges.
+	 * @param edgeName: name of edge to be found.
+	 * @return a list of matching edges, case there are not matching, this method returns an empty list.
+	 */
+	public List<FuzzyEdge> getEdgesByName(String edgeName)
+	{
+		List<FuzzyEdge> edges = new ArrayList<FuzzyEdge>();
+		
+		for(FuzzyEdge edge : this.edgesMap.getValues())
+		{
+			if(edge.getName().equals(edgeName))
+				edges.add(edge);
+		}
+		return edges;
+	}
+	
 	public DefaultDirectedGraph<Integer, FuzzyEdge> getGraph() 
 	{
 		return graph;
@@ -104,7 +142,7 @@ public class FuzzyGraph
 	{
 		return output;
 	}
-
+	
 	/**
 	 * Interface used by the design pattern Visitor.
 	 * The idea is separate the map of its operations.

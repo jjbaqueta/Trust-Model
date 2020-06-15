@@ -42,6 +42,10 @@ public class ImpressionConverter
 				belief = new Structure(Mnemonic.REPUTATION.getMnemonic());
 				break;
 				
+			case KNOWHOW:
+				belief = new Structure(Mnemonic.KNOWHOW.getMnemonic());
+				break;
+				
 			default:
 				throw new IllegalArgumentException("Literal name is not valid: " + beliefType);
 		}

@@ -16,7 +16,12 @@ import fuzzyCognitiveMaps.model.FuzzyVisitor;
  */
 public class GenerateDotFileVisitor implements FuzzyVisitor 
 {	
-	public GenerateDotFileVisitor() {}
+	private String fileName;
+	
+	public GenerateDotFileVisitor(String fileName) 
+	{
+		this.fileName = fileName;
+	}
 	
 	/**
 	 * Create a file.gv from the fuzzy map.
@@ -72,7 +77,7 @@ public class GenerateDotFileVisitor implements FuzzyVisitor
 	{
 		try 
 		{
-			FileWriter fw = new FileWriter("dots/fuzzyMap.dot");
+			FileWriter fw = new FileWriter("dots/" + this.fileName + ".dot");
 			BufferedWriter bw = new BufferedWriter(fw);
 			
 	        bw.write(fileContent);
