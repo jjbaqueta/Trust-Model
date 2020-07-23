@@ -7,8 +7,8 @@
 	</classpathentry>
 	<classpathentry excluding="*.asl" kind="src" path="src/asl"/>
 	<classpathentry kind="src" path="src/java"/>
-	<classpathentry kind="lib" path="/home/baqueta/Documents/libs/jason-2.4/libs/jason-2.4.jar"/>
 	<classpathentry kind="lib" path="lib/jgrapht-core-1.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/jFuzzyLogic.jar"/>
+	<classpathentry kind="lib" path="lib/jason-2.5.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

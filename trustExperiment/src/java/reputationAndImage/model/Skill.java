@@ -2,7 +2,7 @@ package reputationAndImage.model;
 
 /**
  * This class implements the skill enum.
- * It is used to define specializations to agents.
+ * It is used to define the agents' specializations.
  */
 
 public enum Skill 

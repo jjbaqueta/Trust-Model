@@ -22,7 +22,7 @@ import reputationAndImage.services.ImpressionAggregation;
  * Action: images aggregation into a reputation belief.
  */
 
-public class addReputation extends DefaultInternalAction
+public class computeReputation extends DefaultInternalAction
 {
 	private static final long serialVersionUID = 1L;
 	

@@ -1,7 +1,7 @@
 package reputationAndImage.model;
 
 /**
- * This class implements the mnemonics enum.
+ * This class implements a mnemonics enum.
  * It is used to name the agent's beliefs.
  */
 

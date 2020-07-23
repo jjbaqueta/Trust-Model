@@ -9,9 +9,7 @@ import fuzzyCognitiveMaps.model.FuzzyNode;
 import fuzzyCognitiveMaps.model.FuzzyVisitor;
 
 /**
- * This class propagates the values of an input configuration for whole Fuzzy map. 
- * Thus, all nodes of the Fuzzy map are updated
- * according to values defined by the inputs.
+ * This class propagates the values of input nodes for whole Fuzzy map. 
  */
 public class PropagateInputsVisitor implements FuzzyVisitor 
 {
@@ -86,20 +84,12 @@ public class PropagateInputsVisitor implements FuzzyVisitor
 		return Math.tanh(x);
 	}
 	
-	/**
-	 * Indicated when node's values are based on interval [-1, 1]
-	 * @return a value in the interval [-1,1] as result of hyperbolic sine operation
-	 */
 	@SuppressWarnings("unused")
 	private double thresholdSin(double x) 
 	{
 		return Math.sin(x);
 	}
 	
-	/**
-	 * Indicated when node's values are based on interval [-1, 1]
-	 * @return a value in the interval [-1,1] as result of hyperbolic sine operation
-	 */
 	@SuppressWarnings("unused")
 	private double thresholdCos(double x) 
 	{

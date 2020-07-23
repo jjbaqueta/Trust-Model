@@ -12,8 +12,8 @@ import jason.asSyntax.Structure;
 
 /**
  * This class implements an impression.
- * An impression is produced by a given agent (requester),
- * considering the service performed by another agent (provider).
+ * An impression is produced by an appraiser agent (requester).
+ * The appraiser makes an evaluation about the service performed by another agent (provider).
  */
 public class Impression implements Comparable<Impression> 
 {
@@ -33,7 +33,7 @@ public class Impression implements Comparable<Impression>
 	}
 	
 	/**
-	 * Inserts a new rating in rating map.
+	 * Insert a new rating in the rating map.
 	 * @param criterion: criterion's name (key).
 	 * @param rating: criterion's value.
 	 */
@@ -43,7 +43,7 @@ public class Impression implements Comparable<Impression>
 	}
 	
 	/**
-	 * Gets the value of a given criterion.
+	 * Get the value of a given criterion.
 	 * @param criterionName: criterion's name (key).
 	 * @return the criterion's value.
 	 */
@@ -59,7 +59,7 @@ public class Impression implements Comparable<Impression>
 	}
 	
 	/**
-	 * Changes the value of a rating.
+	 * Change the value of a rating.
 	 * @param criterionName: criterion's name (key).
 	 * @param rating: criterion's value.
 	 */
@@ -111,9 +111,9 @@ public class Impression implements Comparable<Impression>
 	}
 	
 	/**
-	 * This method translates an impression belief to impression object.
-	 * An impression belief is obtained from the belief base of an agent.
-	 * @param imp: an impression: imp(requester,provider,time,skill,[criteria],[values])
+	 * This method translates an impression (belief) into an object.
+	 * An impression is obtained from the belief base of an agent.
+	 * @param imp: an impression (belief), format: imp(requester,provider,time,skill,[criteria],[values])
 	 * @return an impression (Object).
 	 */
 	public static Impression parserBeleif(Structure imp)

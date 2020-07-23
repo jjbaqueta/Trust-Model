@@ -4,7 +4,9 @@ import jason.asSemantics.Agent;
 import jason.bb.DefaultBeliefBase;
 
 /**
- * This class is used to set the time when a belief is added in the belief base (BB)
+ * This class starts the execution time for addition of believes.
+ * Whenever a belief is added in the belief base of an agent,
+ * this belief receives a time stamp based on the initial time stored in such a belief base  
  */
 public class TimeBB extends DefaultBeliefBase 
 {

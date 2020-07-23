@@ -10,7 +10,7 @@ import fuzzyCognitiveMaps.model.FuzzyNode;
 import fuzzyCognitiveMaps.model.FuzzyVisitor;
 
 /**
- * This implements the Breadth First Search (bfs). 
+ * This class implements the Breadth First Search (bfs). 
  * As output, the bfs shows all reached nodes from the inputs of given a Fuzzy Cognitive map.
  */
 public class BfsVisitor implements FuzzyVisitor 
@@ -27,7 +27,7 @@ public class BfsVisitor implements FuzzyVisitor
 	} 
 
 	/**
-	 * Implements the Breadth First Search (BFS).
+	 * Implement the Breadth First Search (BFS).
 	 * This method traverses the fuzzy map from a given input node.
 	 * @param startNode: the initial node for the search
 	 * @param fuzzyGraph: the cognitive fuzzy map 

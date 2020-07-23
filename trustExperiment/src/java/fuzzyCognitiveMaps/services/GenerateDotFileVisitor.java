@@ -12,7 +12,7 @@ import fuzzyCognitiveMaps.model.FuzzyVisitor;
 
 /**
  * This class generates a file.gv from a Fuzzy Map. 
- * The file.gv is used by dot language to generate a view of the Fuzzy Map.
+ * The file.gv is used to generate a view of the Fuzzy Map.
  */
 public class GenerateDotFileVisitor implements FuzzyVisitor 
 {	
